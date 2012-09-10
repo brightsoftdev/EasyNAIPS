@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F912A4E315FDA67300C3F95C /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F912A4DE15FDA67300C3F95C /* KeychainItemWrapper.m */; };
+		F912A4E615FDAD1300C3F95C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F912A4E515FDAD1300C3F95C /* Security.framework */; };
+		F9189F7215F7613F00F7711D /* SettingsTextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9189F7115F7613F00F7711D /* SettingsTextInputCell.xib */; };
+		F9189F7615F7615C00F7711D /* SettingsTextInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9189F7515F7615B00F7711D /* SettingsTextInputCell.m */; };
+		F9238FCB15EF7157007E66C5 /* NAIPSObjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9238FCA15EF7157007E66C5 /* NAIPSObjectCell.m */; };
+		F9238FCE15EF718F007E66C5 /* NAIPSObjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9238FCD15EF718F007E66C5 /* NAIPSObjectCell.xib */; };
+		F9238FD015EF77EE007E66C5 /* exclamation.png in Resources */ = {isa = PBXBuildFile; fileRef = F9238FCF15EF77EE007E66C5 /* exclamation.png */; };
+		F9238FD215EF7F30007E66C5 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = F9238FD115EF7F30007E66C5 /* pin.png */; };
+		F9238FD415EF7F59007E66C5 /* map_point.png in Resources */ = {isa = PBXBuildFile; fileRef = F9238FD315EF7F59007E66C5 /* map_point.png */; };
+		F92525D215F78A9E0012A274 /* AddLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92525D115F78A9E0012A274 /* AddLocationViewController.m */; };
+		F92525D415F790BA0012A274 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = F92525D315F790BA0012A274 /* settings.png */; };
+		F9284AFD15ECC19100A20202 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9284AFC15ECC19100A20202 /* UIKit.framework */; };
+		F9284AFF15ECC19100A20202 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9284AFE15ECC19100A20202 /* Foundation.framework */; };
+		F9284B0115ECC19100A20202 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9284B0015ECC19100A20202 /* CoreGraphics.framework */; };
+		F9284B0715ECC19100A20202 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9284B0515ECC19100A20202 /* InfoPlist.strings */; };
+		F9284B0915ECC19100A20202 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9284B0815ECC19100A20202 /* main.m */; };
+		F9284B0D15ECC19100A20202 /* EasyNAIPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9284B0C15ECC19100A20202 /* EasyNAIPSAppDelegate.m */; };
+		F9284B1515ECC2B400A20202 /* LocationBriefingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9284B1415ECC2B400A20202 /* LocationBriefingTableViewController.m */; };
+		F9284B2715ECC63300A20202 /* NAIPS.m in Sources */ = {isa = PBXBuildFile; fileRef = F9284B1815ECC63300A20202 /* NAIPS.m */; };
+		F9284B2815ECC63300A20202 /* NAIPSAreaBriefing.m in Sources */ = {isa = PBXBuildFile; fileRef = F9284B1A15ECC63300A20202 /* NAIPSAreaBriefing.m */; };
+		F9284B2915ECC63300A20202 /* NAIPSLocationBriefing.m in Sources */ = {isa = PBXBuildFile; fileRef = F9284B1C15ECC63300A20202 /* NAIPSLocationBriefing.m */; };
+		F9284B2A15ECC63300A20202 /* NAIPSLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = F9284B1E15ECC63300A20202 /* NAIPSLogin.m */; };
+		F9284B2B15ECC63300A20202 /* NAIPSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F9284B2015ECC63300A20202 /* NAIPSObject.m */; };
+		F9284B2C15ECC63300A20202 /* NAIPSObjectQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F9284B2215ECC63300A20202 /* NAIPSObjectQueue.m */; };
+		F9284B2D15ECC63300A20202 /* NAIPSObjectStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F9284B2415ECC63300A20202 /* NAIPSObjectStore.m */; };
+		F9284B2E15ECC63300A20202 /* NAIPSPost.m in Sources */ = {isa = PBXBuildFile; fileRef = F9284B2615ECC63300A20202 /* NAIPSPost.m */; };
+		F9284B3215ECE12100A20202 /* AddLocationBriefingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9284B3015ECE12100A20202 /* AddLocationBriefingViewController.m */; };
+		F9284B3315ECE12100A20202 /* AddLocationBriefingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9284B3115ECE12100A20202 /* AddLocationBriefingViewController.xib */; };
+		F9298F3115EF9252006BE2D7 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F9298F3015EF9252006BE2D7 /* icon.png */; };
+		F9298F3715EF9C19006BE2D7 /* push_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = F9298F3615EF9C18006BE2D7 /* push_pin.png */; };
+		F9516EA815ECE66C008E0EFC /* LocationBriefingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9516EA615ECE66B008E0EFC /* LocationBriefingViewController.m */; };
+		F9516EA915ECE66C008E0EFC /* LocationBriefingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9516EA715ECE66C008E0EFC /* LocationBriefingViewController.xib */; };
+		F9516EAE15ED0381008E0EFC /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F9516EAD15ED0381008E0EFC /* arrow.png */; };
+		F9516EB115ED0409008E0EFC /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9516EB015ED0409008E0EFC /* PullRefreshTableViewController.m */; };
+		F9516EB315ED0482008E0EFC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9516EB215ED0482008E0EFC /* QuartzCore.framework */; };
+		F9570FDD15F4DE1200FBA1E0 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9570FDB15F4DE1200FBA1E0 /* SettingsViewController.m */; };
+		F9FA583215F0E7CB009DD7A7 /* blue_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = F9FA583115F0E7CB009DD7A7 /* blue_pin.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F912A4DD15FDA67300C3F95C /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainItemWrapper.h; path = Classes/KeychainItemWrapper.h; sourceTree = "<group>"; };
+		F912A4DE15FDA67300C3F95C /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainItemWrapper.m; path = Classes/KeychainItemWrapper.m; sourceTree = "<group>"; };
+		F912A4E515FDAD1300C3F95C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F912A4E715FDB31E00C3F95C /* EasyNAIPS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EasyNAIPS.entitlements; sourceTree = "<group>"; };
+		F9189F7115F7613F00F7711D /* SettingsTextInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTextInputCell.xib; sourceTree = "<group>"; };
+		F9189F7415F7615B00F7711D /* SettingsTextInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTextInputCell.h; sourceTree = "<group>"; };
+		F9189F7515F7615B00F7711D /* SettingsTextInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTextInputCell.m; sourceTree = "<group>"; };
+		F9238FC915EF7157007E66C5 /* NAIPSObjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAIPSObjectCell.h; sourceTree = "<group>"; };
+		F9238FCA15EF7157007E66C5 /* NAIPSObjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAIPSObjectCell.m; sourceTree = "<group>"; };
+		F9238FCD15EF718F007E66C5 /* NAIPSObjectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NAIPSObjectCell.xib; sourceTree = "<group>"; };
+		F9238FCF15EF77EE007E66C5 /* exclamation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exclamation.png; sourceTree = "<group>"; };
+		F9238FD115EF7F30007E66C5 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		F9238FD315EF7F59007E66C5 /* map_point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_point.png; sourceTree = "<group>"; };
+		F92525D015F78A9E0012A274 /* AddLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLocationViewController.h; sourceTree = "<group>"; };
+		F92525D115F78A9E0012A274 /* AddLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLocationViewController.m; sourceTree = "<group>"; };
+		F92525D315F790BA0012A274 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		F9284AF815ECC19100A20202 /* EasyNAIPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNAIPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9284AFC15ECC19100A20202 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F9284AFE15ECC19100A20202 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F9284B0015ECC19100A20202 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F9284B0415ECC19100A20202 /* EasyNAIPS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EasyNAIPS-Info.plist"; sourceTree = "<group>"; };
+		F9284B0615ECC19100A20202 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F9284B0815ECC19100A20202 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F9284B0A15ECC19100A20202 /* EasyNAIPS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyNAIPS-Prefix.pch"; sourceTree = "<group>"; };
+		F9284B0B15ECC19100A20202 /* EasyNAIPSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyNAIPSAppDelegate.h; sourceTree = "<group>"; };
+		F9284B0C15ECC19100A20202 /* EasyNAIPSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyNAIPSAppDelegate.m; sourceTree = "<group>"; };
+		F9284B1315ECC2B400A20202 /* LocationBriefingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationBriefingTableViewController.h; sourceTree = "<group>"; };
+		F9284B1415ECC2B400A20202 /* LocationBriefingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationBriefingTableViewController.m; sourceTree = "<group>"; };
+		F9284B1715ECC63300A20202 /* NAIPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAIPS.h; sourceTree = "<group>"; };
+		F9284B1815ECC63300A20202 /* NAIPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAIPS.m; sourceTree = "<group>"; };
+		F9284B1915ECC63300A20202 /* NAIPSAreaBriefing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAIPSAreaBriefing.h; sourceTree = "<group>"; };
+		F9284B1A15ECC63300A20202 /* NAIPSAreaBriefing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAIPSAreaBriefing.m; sourceTree = "<group>"; };
+		F9284B1B15ECC63300A20202 /* NAIPSLocationBriefing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAIPSLocationBriefing.h; sourceTree = "<group>"; };
+		F9284B1C15ECC63300A20202 /* NAIPSLocationBriefing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAIPSLocationBriefing.m; sourceTree = "<group>"; };
+		F9284B1D15ECC63300A20202 /* NAIPSLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAIPSLogin.h; sourceTree = "<group>"; };
+		F9284B1E15ECC63300A20202 /* NAIPSLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAIPSLogin.m; sourceTree = "<group>"; };
+		F9284B1F15ECC63300A20202 /* NAIPSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAIPSObject.h; sourceTree = "<group>"; };
+		F9284B2015ECC63300A20202 /* NAIPSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAIPSObject.m; sourceTree = "<group>"; };
+		F9284B2115ECC63300A20202 /* NAIPSObjectQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAIPSObjectQueue.h; sourceTree = "<group>"; };
+		F9284B2215ECC63300A20202 /* NAIPSObjectQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAIPSObjectQueue.m; sourceTree = "<group>"; };
+		F9284B2315ECC63300A20202 /* NAIPSObjectStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAIPSObjectStore.h; sourceTree = "<group>"; };
+		F9284B2415ECC63300A20202 /* NAIPSObjectStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAIPSObjectStore.m; sourceTree = "<group>"; };
+		F9284B2515ECC63300A20202 /* NAIPSPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAIPSPost.h; sourceTree = "<group>"; };
+		F9284B2615ECC63300A20202 /* NAIPSPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAIPSPost.m; sourceTree = "<group>"; };
+		F9284B2F15ECE12100A20202 /* AddLocationBriefingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLocationBriefingViewController.h; sourceTree = "<group>"; };
+		F9284B3015ECE12100A20202 /* AddLocationBriefingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLocationBriefingViewController.m; sourceTree = "<group>"; };
+		F9284B3115ECE12100A20202 /* AddLocationBriefingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddLocationBriefingViewController.xib; sourceTree = "<group>"; };
+		F9298F3015EF9252006BE2D7 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		F9298F3615EF9C18006BE2D7 /* push_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = push_pin.png; sourceTree = "<group>"; };
+		F9516EA515ECE66B008E0EFC /* LocationBriefingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationBriefingViewController.h; sourceTree = "<group>"; };
+		F9516EA615ECE66B008E0EFC /* LocationBriefingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationBriefingViewController.m; sourceTree = "<group>"; };
+		F9516EA715ECE66C008E0EFC /* LocationBriefingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationBriefingViewController.xib; sourceTree = "<group>"; };
+		F9516EAD15ED0381008E0EFC /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		F9516EAF15ED03D9008E0EFC /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewController.h; sourceTree = "<group>"; };
+		F9516EB015ED0409008E0EFC /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewController.m; sourceTree = "<group>"; };
+		F9516EB215ED0482008E0EFC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F9570FDA15F4DE1200FBA1E0 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		F9570FDB15F4DE1200FBA1E0 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		F9FA583115F0E7CB009DD7A7 /* blue_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_pin.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9284AF515ECC19000A20202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F912A4E615FDAD1300C3F95C /* Security.framework in Frameworks */,
+				F9516EB315ED0482008E0EFC /* QuartzCore.framework in Frameworks */,
+				F9284AFD15ECC19100A20202 /* UIKit.framework in Frameworks */,
+				F9284AFF15ECC19100A20202 /* Foundation.framework in Frameworks */,
+				F9284B0115ECC19100A20202 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9284AED15ECC19000A20202 = {
+			isa = PBXGroup;
+			children = (
+				F912A4E515FDAD1300C3F95C /* Security.framework */,
+				F9516EB215ED0482008E0EFC /* QuartzCore.framework */,
+				F9284B0215ECC19100A20202 /* EasyNAIPS */,
+				F9284AFB15ECC19100A20202 /* Frameworks */,
+				F9284AF915ECC19100A20202 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9284AF915ECC19100A20202 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9284AF815ECC19100A20202 /* EasyNAIPS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9284AFB15ECC19100A20202 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9284AFC15ECC19100A20202 /* UIKit.framework */,
+				F9284AFE15ECC19100A20202 /* Foundation.framework */,
+				F9284B0015ECC19100A20202 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9284B0215ECC19100A20202 /* EasyNAIPS */ = {
+			isa = PBXGroup;
+			children = (
+				F912A4E715FDB31E00C3F95C /* EasyNAIPS.entitlements */,
+				F9298F3615EF9C18006BE2D7 /* push_pin.png */,
+				F9298F3015EF9252006BE2D7 /* icon.png */,
+				F9516EAF15ED03D9008E0EFC /* PullRefreshTableViewController.h */,
+				F9516EB015ED0409008E0EFC /* PullRefreshTableViewController.m */,
+				F9284B0B15ECC19100A20202 /* EasyNAIPSAppDelegate.h */,
+				F9284B0C15ECC19100A20202 /* EasyNAIPSAppDelegate.m */,
+				F9284B1415ECC2B400A20202 /* LocationBriefingTableViewController.m */,
+				F9284B1315ECC2B400A20202 /* LocationBriefingTableViewController.h */,
+				F9516EA515ECE66B008E0EFC /* LocationBriefingViewController.h */,
+				F9516EA615ECE66B008E0EFC /* LocationBriefingViewController.m */,
+				F9516EA715ECE66C008E0EFC /* LocationBriefingViewController.xib */,
+				F9284B2F15ECE12100A20202 /* AddLocationBriefingViewController.h */,
+				F9284B3015ECE12100A20202 /* AddLocationBriefingViewController.m */,
+				F9284B3115ECE12100A20202 /* AddLocationBriefingViewController.xib */,
+				F92525D015F78A9E0012A274 /* AddLocationViewController.h */,
+				F92525D115F78A9E0012A274 /* AddLocationViewController.m */,
+				F92525D315F790BA0012A274 /* settings.png */,
+				F9516EAD15ED0381008E0EFC /* arrow.png */,
+				F9570FDA15F4DE1200FBA1E0 /* SettingsViewController.h */,
+				F9570FDB15F4DE1200FBA1E0 /* SettingsViewController.m */,
+				F9189F7115F7613F00F7711D /* SettingsTextInputCell.xib */,
+				F9189F7415F7615B00F7711D /* SettingsTextInputCell.h */,
+				F9189F7515F7615B00F7711D /* SettingsTextInputCell.m */,
+				F9284B1615ECC61300A20202 /* NAIPS */,
+				F9284B0315ECC19100A20202 /* Supporting Files */,
+			);
+			path = EasyNAIPS;
+			sourceTree = "<group>";
+		};
+		F9284B0315ECC19100A20202 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9284B0415ECC19100A20202 /* EasyNAIPS-Info.plist */,
+				F9284B0515ECC19100A20202 /* InfoPlist.strings */,
+				F9284B0815ECC19100A20202 /* main.m */,
+				F9284B0A15ECC19100A20202 /* EasyNAIPS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9284B1615ECC61300A20202 /* NAIPS */ = {
+			isa = PBXGroup;
+			children = (
+				F9284B1715ECC63300A20202 /* NAIPS.h */,
+				F9284B1815ECC63300A20202 /* NAIPS.m */,
+				F9284B1915ECC63300A20202 /* NAIPSAreaBriefing.h */,
+				F9284B1A15ECC63300A20202 /* NAIPSAreaBriefing.m */,
+				F9284B1B15ECC63300A20202 /* NAIPSLocationBriefing.h */,
+				F9284B1C15ECC63300A20202 /* NAIPSLocationBriefing.m */,
+				F9284B1D15ECC63300A20202 /* NAIPSLogin.h */,
+				F9284B1E15ECC63300A20202 /* NAIPSLogin.m */,
+				F9284B1F15ECC63300A20202 /* NAIPSObject.h */,
+				F9284B2015ECC63300A20202 /* NAIPSObject.m */,
+				F9284B2115ECC63300A20202 /* NAIPSObjectQueue.h */,
+				F9284B2215ECC63300A20202 /* NAIPSObjectQueue.m */,
+				F9238FC915EF7157007E66C5 /* NAIPSObjectCell.h */,
+				F9238FCA15EF7157007E66C5 /* NAIPSObjectCell.m */,
+				F9238FCD15EF718F007E66C5 /* NAIPSObjectCell.xib */,
+				F9FA583115F0E7CB009DD7A7 /* blue_pin.png */,
+				F9238FD315EF7F59007E66C5 /* map_point.png */,
+				F9238FD115EF7F30007E66C5 /* pin.png */,
+				F912A4DD15FDA67300C3F95C /* KeychainItemWrapper.h */,
+				F912A4DE15FDA67300C3F95C /* KeychainItemWrapper.m */,
+				F9238FCF15EF77EE007E66C5 /* exclamation.png */,
+				F9284B2315ECC63300A20202 /* NAIPSObjectStore.h */,
+				F9284B2415ECC63300A20202 /* NAIPSObjectStore.m */,
+				F9284B2515ECC63300A20202 /* NAIPSPost.h */,
+				F9284B2615ECC63300A20202 /* NAIPSPost.m */,
+			);
+			name = NAIPS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9284AF715ECC19000A20202 /* EasyNAIPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9284B1015ECC19100A20202 /* Build configuration list for PBXNativeTarget "EasyNAIPS" */;
+			buildPhases = (
+				F9284AF415ECC19000A20202 /* Sources */,
+				F9284AF515ECC19000A20202 /* Frameworks */,
+				F9284AF615ECC19000A20202 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyNAIPS;
+			productName = EasyNAIPS;
+			productReference = F9284AF815ECC19100A20202 /* EasyNAIPS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9284AEF15ECC19000A20202 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EasyNAIPS;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Iain Blair";
+			};
+			buildConfigurationList = F9284AF215ECC19000A20202 /* Build configuration list for PBXProject "EasyNAIPS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F9284AED15ECC19000A20202;
+			productRefGroup = F9284AF915ECC19100A20202 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9284AF715ECC19000A20202 /* EasyNAIPS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9284AF615ECC19000A20202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9284B0715ECC19100A20202 /* InfoPlist.strings in Resources */,
+				F9284B3315ECE12100A20202 /* AddLocationBriefingViewController.xib in Resources */,
+				F9516EA915ECE66C008E0EFC /* LocationBriefingViewController.xib in Resources */,
+				F9516EAE15ED0381008E0EFC /* arrow.png in Resources */,
+				F9238FCE15EF718F007E66C5 /* NAIPSObjectCell.xib in Resources */,
+				F9238FD015EF77EE007E66C5 /* exclamation.png in Resources */,
+				F9238FD215EF7F30007E66C5 /* pin.png in Resources */,
+				F9238FD415EF7F59007E66C5 /* map_point.png in Resources */,
+				F9298F3115EF9252006BE2D7 /* icon.png in Resources */,
+				F9298F3715EF9C19006BE2D7 /* push_pin.png in Resources */,
+				F9FA583215F0E7CB009DD7A7 /* blue_pin.png in Resources */,
+				F9189F7215F7613F00F7711D /* SettingsTextInputCell.xib in Resources */,
+				F92525D415F790BA0012A274 /* settings.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9284AF415ECC19000A20202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9284B0915ECC19100A20202 /* main.m in Sources */,
+				F9284B0D15ECC19100A20202 /* EasyNAIPSAppDelegate.m in Sources */,
+				F9284B1515ECC2B400A20202 /* LocationBriefingTableViewController.m in Sources */,
+				F9284B2715ECC63300A20202 /* NAIPS.m in Sources */,
+				F9284B2815ECC63300A20202 /* NAIPSAreaBriefing.m in Sources */,
+				F9284B2915ECC63300A20202 /* NAIPSLocationBriefing.m in Sources */,
+				F9284B2A15ECC63300A20202 /* NAIPSLogin.m in Sources */,
+				F9284B2B15ECC63300A20202 /* NAIPSObject.m in Sources */,
+				F9284B2C15ECC63300A20202 /* NAIPSObjectQueue.m in Sources */,
+				F9284B2D15ECC63300A20202 /* NAIPSObjectStore.m in Sources */,
+				F9284B2E15ECC63300A20202 /* NAIPSPost.m in Sources */,
+				F9284B3215ECE12100A20202 /* AddLocationBriefingViewController.m in Sources */,
+				F9516EA815ECE66C008E0EFC /* LocationBriefingViewController.m in Sources */,
+				F9516EB115ED0409008E0EFC /* PullRefreshTableViewController.m in Sources */,
+				F9238FCB15EF7157007E66C5 /* NAIPSObjectCell.m in Sources */,
+				F9570FDD15F4DE1200FBA1E0 /* SettingsViewController.m in Sources */,
+				F9189F7615F7615C00F7711D /* SettingsTextInputCell.m in Sources */,
+				F92525D215F78A9E0012A274 /* AddLocationViewController.m in Sources */,
+				F912A4E315FDA67300C3F95C /* KeychainItemWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9284B0515ECC19100A20202 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9284B0615ECC19100A20202 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9284B0E15ECC19100A20202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F9284B0F15ECC19100A20202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9284B1115ECC19100A20202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EasyNAIPS/EasyNAIPS.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyNAIPS/EasyNAIPS-Prefix.pch";
+				INFOPLIST_FILE = "EasyNAIPS/EasyNAIPS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F9284B1215ECC19100A20202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EasyNAIPS/EasyNAIPS.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyNAIPS/EasyNAIPS-Prefix.pch";
+				INFOPLIST_FILE = "EasyNAIPS/EasyNAIPS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9284AF215ECC19000A20202 /* Build configuration list for PBXProject "EasyNAIPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9284B0E15ECC19100A20202 /* Debug */,
+				F9284B0F15ECC19100A20202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9284B1015ECC19100A20202 /* Build configuration list for PBXNativeTarget "EasyNAIPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9284B1115ECC19100A20202 /* Debug */,
+				F9284B1215ECC19100A20202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9284AEF15ECC19000A20202 /* Project object */;
+}
