@@ -29,9 +29,9 @@
     
     UINavigationController *locationNavController = [[UINavigationController alloc] initWithRootViewController:vc];
     
-     UINavigationController *areaNavController = [[UINavigationController alloc] initWithRootViewController:removeMe];
+    UINavigationController *areaNavController = [[UINavigationController alloc] initWithRootViewController:removeMe];
     
-       UINavigationController *settingsController = [[UINavigationController alloc] initWithRootViewController:settings];
+    UINavigationController *settingsController = [[UINavigationController alloc] initWithRootViewController:settings];
     
     NSArray *controllers = [NSArray arrayWithObjects:locationNavController,areaNavController,settingsController,nil];
     
