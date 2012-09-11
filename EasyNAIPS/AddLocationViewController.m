@@ -114,9 +114,23 @@
 
 -(BOOL) textFieldShouldReturn:(UITextField *)textField
 {
+    NSString *input = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     
-    // more checks here
-    NAIPSLocationBriefing *loc = [[NAIPSLocationBriefing alloc] initWithKeyString:textField.text];
+    // empty string, or just spaces and tabs...
+    if ([input length] == 0)
+    {
+        return NO;
+    }
+        
+    NSRange badCharacterRange = [input rangeOfCharacterFromSet:[[NSCharacterSet letterCharacterSet] invertedSet]];
+    
+    if (badCharacterRange.location != NSNotFound)
+    {
+        // found bad characters
+        return NO;
+    }
+    
+    NAIPSLocationBriefing *loc = [[NAIPSLocationBriefing alloc] initWithKeyString:input.uppercaseString];
     
     [[[[NAIPSObjectStore sharedStore] allObjects] objectForKey:@"locationBriefing"] addObject:loc];
     
@@ -127,7 +141,5 @@
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
     
     return YES;
-
 }
-
 @end
