@@ -71,8 +71,8 @@
 {
     NSLog(@"NAIPSObjectConnection Error: %@", [[self.post connectionError] localizedDescription]);
     
-    // pass on the connection error, this way NAIPSObjects error is the connectionError if a connection error occurs.
-    error = [self.post connectionError];
+    // Since this should fail the Q, we have to repackage the error with my own custom error code of 10.
+    error = [[NSError alloc] initWithDomain:@"NAIPS" code:10 userInfo:[[self.post connectionError] userInfo]];
     
     // notify queue we are done, the queue can check my error.
     [self.queue objectDone];
