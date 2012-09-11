@@ -101,7 +101,7 @@
             [[cell cellTextField] setSecureTextEntry:NO];
     [[cell cellTextField] setAutocapitalizationType: UITextAutocapitalizationTypeAllCharacters];
     
-            [[cell cellTextField] setPlaceholder:@"Location Identifier"];
+            [[cell cellTextField] setPlaceholder:@"Identifier"];
     if (startingField == nil)
     {
         startingField = [cell cellTextField];
