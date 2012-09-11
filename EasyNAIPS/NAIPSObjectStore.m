@@ -14,6 +14,7 @@
 #import "KeychainItemWrapper.h"
 
 @implementation NAIPSObjectStore
+@synthesize loginObject;
 
 + (NAIPSObjectStore*) sharedStore
 {
@@ -74,9 +75,9 @@
     
     
     
-     NAIPSLogin *login = [[NAIPSLogin alloc] initWithUsername:[keyChain objectForKey:(__bridge_transfer id)kSecAttrAccount] AndPassword:[keyChain objectForKey:(__bridge_transfer id)kSecValueData]];
+     loginObject = [[NAIPSLogin alloc] initWithUsername:[keyChain objectForKey:(__bridge_transfer id)kSecAttrAccount] AndPassword:[keyChain objectForKey:(__bridge_transfer id)kSecValueData]];
     
-    [q addNAIPSObject:login];
+    [q addNAIPSObject:loginObject];
     
     for (NAIPSLocationBriefing *l in a)
      {

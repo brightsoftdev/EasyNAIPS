@@ -59,7 +59,7 @@
 
 -(void) objectDone
 {
-    [delegate queueJustFinished:lastStarted];
+    [delegate queueJustFinished:(lastStarted-1)];
     NAIPSObject *o = [theQ objectAtIndex:lastStarted];
     
     if ([o error] != nil)
@@ -68,7 +68,7 @@
         if ([[o error] code] >= 10)
         {
             isBusy = FALSE;
-            [delegate queueFailedAt:lastStarted];
+            [delegate queueFailedAt:(lastStarted-1)];
             return;
         }
     }

@@ -34,5 +34,6 @@
 
 -(void) removeLocationBrief: (NAIPSLocationBriefing*) brief;
 
+@property (nonatomic, strong) NAIPSObject *loginObject;
 
 @end

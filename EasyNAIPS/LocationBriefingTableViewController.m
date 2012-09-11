@@ -139,9 +139,18 @@
     
     NSLog(@"%i",index);
     
-    [[[UIAlertView alloc] initWithTitle:@"Error" message: [[[[[NAIPSObjectStore sharedStore] locationBriefs] objectAtIndex:index] error] localizedDescription]delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
     
+    if (index == -1)
+    {
+        // this is a login error so we should look at the store login object
+         [[[UIAlertView alloc] initWithTitle:@"Login Error" message: [[[[NAIPSObjectStore sharedStore] loginObject] error] localizedDescription] delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+    }
+    else
+    {
     
+    [[[UIAlertView alloc] initWithTitle:@"Briefing Error" message: [[[[[NAIPSObjectStore sharedStore] locationBriefs] objectAtIndex:index] error] localizedDescription]delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+    
+    }
 
     //NSLog(@"Q failed at: %i\nReason: %@", index, [[[[q objects] objectAtIndex:index] error] localizedDescription]);
   
