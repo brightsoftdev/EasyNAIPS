@@ -60,11 +60,9 @@
     
     NAIPSLocationBriefing *brief = [[[NAIPSObjectStore sharedStore] locationBriefs] objectAtIndex:[indexPath row]];
     
-    
     [vc setBrief:brief];
     
     [[self navigationController] pushViewController:vc animated:YES];
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated

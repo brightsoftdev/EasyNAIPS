@@ -42,6 +42,12 @@
     
 }
 
+-(void) viewWillDisappear:(BOOL)animated
+{
+    [[NAIPSObjectStore sharedStore] cancelQueue];
+    [super viewWillDisappear:animated];
+}
+
 - (void)viewDidUnload
 {
    
@@ -75,8 +81,7 @@
 {
     NSLog(@"Q fin!");
     [webView loadHTMLString:[brief text] baseURL:nil];
-
-    
+ 
 }
 
 -(void) queueFailedAt:(NSInteger)index

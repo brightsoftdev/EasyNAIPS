@@ -39,15 +39,18 @@
 
 -(void) cancel
 {
-    // commented out dont know what it does!
-    /*if (lastStarted == [theQ count])
+    isBusy = FALSE;
+    NSLog(@"Cancelling...");
+
+    // this stops us going over the index count if cancel is called once a queue has been completed.
+    if (lastStarted == [theQ count])
     {
         return;
-    }*/
+    }
     
-    NSLog(@"Cancelling...");
+    
     [[[theQ objectAtIndex:lastStarted] post] cancel];
-    isBusy = FALSE;
+    
 }
 
 -(void) go
