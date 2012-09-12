@@ -57,6 +57,7 @@
 {
     NSLog(@"Go!");
     isBusy = TRUE;
+    [delegate queueJustStarted:lastStarted-1];
     [[[theQ objectAtIndex:lastStarted] post] go];
 }
 

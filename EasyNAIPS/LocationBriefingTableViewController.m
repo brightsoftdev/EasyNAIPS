@@ -125,18 +125,30 @@
     isUpdating = NO;
     [super stopLoading];
     
-    NSLog(@"Q fin!");
+    hud = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+    [self.navigationController.view addSubview:hud];
     
+    hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+    
+	// Set custom view mode
+	hud.mode = MBProgressHUDModeCustomView;
+    
+	hud.labelText = @"Completed";
+    
+    [hud setRemoveFromSuperViewOnHide:YES];
+    [hud show:YES];
+    [hud hide:YES afterDelay:0.6];
+    
+    NSLog(@"Q fin!");
+    [[[self navigationItem] rightBarButtonItem] setEnabled:YES];
+    [[[self navigationItem] leftBarButtonItem] setEnabled:YES];
 }
 
 -(void) queueFailedAt:(NSInteger)index
 {
-    
+
     isUpdating = NO;
     [super stopLoading];
-    
-    NSLog(@"%i",index);
-    
     
     if (index == -1)
     {
@@ -151,28 +163,44 @@
     }
 
     //NSLog(@"Q failed at: %i\nReason: %@", index, [[[[q objects] objectAtIndex:index] error] localizedDescription]);
-  
+    [[[self navigationItem] rightBarButtonItem] setEnabled:YES];
+    [[[self navigationItem] leftBarButtonItem] setEnabled:YES];
+}
+
+-(void) queueJustStarted:(NSInteger)index
+{
+   
+    
 }
 
 -(void) queueJustFinished:(NSInteger)index
 {
+
     [[self tableView] reloadData];
 
 }
 
 -(void) cancelRefresh
 {
-    
     isUpdating = NO;
     [[NAIPSObjectStore sharedStore] cancelQueue];
     [super stopLoading];
+    
+    [[[self navigationItem] rightBarButtonItem] setEnabled:YES];
+    [[[self navigationItem] leftBarButtonItem] setEnabled:YES];
 }
 
 
 -(void)refresh
 {
     
+    [[[self navigationItem] rightBarButtonItem] setEnabled:NO];
+    [[[self navigationItem] leftBarButtonItem] setEnabled:NO];
+
     isUpdating = YES;
+    
+    
+    
     [[NAIPSObjectStore sharedStore] updateObjectsForKey:@"locationBriefing" queueDelegate:self];
 }
 
@@ -180,6 +208,7 @@
 
 - (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     if ((editingStyle == UITableViewCellEditingStyleDelete) && (!isUpdating))
     {
         NAIPSObjectStore* store = [NAIPSObjectStore sharedStore];
@@ -189,6 +218,15 @@
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
      
     }
+    
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)aTableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Detemine if it's in editing mode
+    if (self.editing) {
+        return UITableViewCellEditingStyleDelete;
+    }
+    return UITableViewCellEditingStyleNone;
 }
 
 

@@ -8,7 +8,7 @@
 
 #import "LocationBriefingViewController.h"
 #import "NAIPSObjectStore.h"
-
+#import "MBProgressHUD.h"
 @interface LocationBriefingViewController ()
 
 @end
@@ -45,6 +45,8 @@
 -(void) viewWillDisappear:(BOOL)animated
 {
     [[NAIPSObjectStore sharedStore] cancelQueue];
+    [hud setRemoveFromSuperViewOnHide:YES];
+    [hud hide:YES];
     [super viewWillDisappear:animated];
 }
 
@@ -69,11 +71,20 @@
     {
         // q started.. look to delegates now...
         NSLog(@"**** Q started ****");
+        
+        hud = [[MBProgressHUD alloc] initWithView:webView];
+        [self.webView addSubview:hud];
+
+        
+        hud.labelText = @"Updating...";
+        [hud show:YES];
+        
     }
     else
     {
         // the queue is busy...
         NSLog(@"********Busy*********");
+
     }
 }
 
@@ -81,6 +92,16 @@
 {
     NSLog(@"Q fin!");
     [webView loadHTMLString:[brief text] baseURL:nil];
+    
+    hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+    
+	// Set custom view mode
+	hud.mode = MBProgressHUDModeCustomView;
+    
+	hud.labelText = @"Completed";
+    
+    [hud setRemoveFromSuperViewOnHide:YES];
+    [hud hide:YES afterDelay:0.6];
  
 }
 
@@ -91,6 +112,11 @@
 }
 
 -(void) queueJustFinished:(NSInteger)index
+{
+    
+}
+
+-(void) queueJustStarted:(NSInteger)index
 {
     
 }

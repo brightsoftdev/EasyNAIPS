@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "EasyNAIPS/LocationBriefingTableViewController.m"
-         timestampString = "369112090.44136"
+         timestampString = "369121746.560387"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "179"
-         endingLineNumber = "179"
+         startingLineNumber = "207"
+         endingLineNumber = "207"
          landmarkName = "@implementation LocationBriefingTableViewController"
          landmarkType = "3">
       </FileBreakpoint>

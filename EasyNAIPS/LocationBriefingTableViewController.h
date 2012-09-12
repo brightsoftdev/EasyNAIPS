@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "NAIPSObjectStore.h"
 #import "PullRefreshTableViewController.h"
+#import "MBProgressHUD.h"
 
 @interface LocationBriefingTableViewController : PullRefreshTableViewController <NAIPSObjectQueueDelegate>
 {
     BOOL isUpdating;
+    MBProgressHUD *hud;
     
 }
 

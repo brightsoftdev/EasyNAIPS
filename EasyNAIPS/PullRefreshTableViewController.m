@@ -78,7 +78,7 @@
 }
 
 - (void)setupStrings{
-  textPull = @"Pull down to update all";
+  textPull = @"Pull down to update all.";
   textRelease = @"Release to update...";
   textLoading = @"Updating...Tap to Cancel.";
 }

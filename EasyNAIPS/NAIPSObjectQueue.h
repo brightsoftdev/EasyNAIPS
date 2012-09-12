@@ -16,6 +16,7 @@
 -(void) queueDidFinish;
 -(void) queueFailedAt: (NSInteger) index;
 -(void) queueJustFinished: (NSInteger) index;
+-(void) queueJustStarted: (NSInteger) index;
 @end
 
 
